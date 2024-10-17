@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Wed Oct 16 21:51:52 2024 as: nmap -sV -sC -oA EvilCUPS 10.10.11.40
+Host: 10.10.11.40 ()	Status: Up
+Host: 10.10.11.40 ()	Ports: 22/open/tcp//ssh//OpenSSH 9.2p1 Debian 2+deb12u3 (protocol 2.0)/, 631/open/tcp//ipp//CUPS 2.4/	Ignored State: closed (998)
+# Nmap done at Wed Oct 16 21:53:13 2024 -- 1 IP address (1 host up) scanned in 80.87 seconds
