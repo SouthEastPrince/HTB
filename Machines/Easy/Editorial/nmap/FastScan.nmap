@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Mon Oct 21 22:51:43 2024 as: nmap -v -F -oA FastScan 10.10.11.20
+Nmap scan report for Editorial.htb (10.10.11.20)
+Host is up (0.042s latency).
+Not shown: 98 closed tcp ports (conn-refused)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Oct 21 22:51:43 2024 -- 1 IP address (1 host up) scanned in 0.21 seconds

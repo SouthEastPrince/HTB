@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Mon Oct 21 22:53:32 2024 as: nmap -p 22,80 -sV -sC -oA Editorial 10.10.11.20
+Host: 10.10.11.20 (Editorial.htb)	Status: Up
+Host: 10.10.11.20 (Editorial.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.7 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/
+# Nmap done at Mon Oct 21 22:53:39 2024 -- 1 IP address (1 host up) scanned in 7.60 seconds
