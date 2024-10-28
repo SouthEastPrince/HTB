@@ -390,7 +390,7 @@ r = Repo.init('', bare=True)
 r.clone_from(url_to_clone, 'new_changes', multi_options=["-c protocol.ext.allow=always"])
 ```
 
-### We see it uses git gtom GitPython Library we check to see its version
+### We see it uses git from GitPython Library we check to see its version
 ```txt
 prod@editorial:/opt/internal_apps/clone_changes$ GitPython -version
 GitPython: command not found
