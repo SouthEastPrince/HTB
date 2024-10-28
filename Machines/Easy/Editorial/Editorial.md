@@ -11,6 +11,18 @@ __MODE__ : Guided
 `Editorial` is an easy difficulty Linux machine that features a publishing web application vulnerable to `Server-Side Request Forgery (SSRF)`. This vulnerability is leveraged to gain access to an internal running API, which is then leveraged to obtain credentials that lead to `SSH` access to the machine. Enumerating the system further reveals a Git repository that is leveraged to reveal credentials for a new user. The `root` user can be obtained by exploiting [CVE-2022-24439](https://nvd.nist.gov/vuln/detail/CVE-2022-24439) and the sudo configuration. 
 
 # Nmap
+
+## Fast scan
+```raw
+# Nmap 7.94SVN scan initiated Mon Oct 21 22:51:43 2024 as: nmap -v -F -oA FastScan 10.10.11.20
+Nmap scan report for Editorial.htb (10.10.11.20)
+Host is up (0.042s latency).
+Not shown: 98 closed tcp ports (conn-refused)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+```
+## Detailed scan
 ```raw
 nmap -p 22,80 -sV -sC 10.10.11.20 -oA Editorial
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-10-21 22:53 EDT
