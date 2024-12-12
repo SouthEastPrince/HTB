@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Dec 12 00:19:13 2024 as: /usr/lib/nmap/nmap -&#45;privileged -sCV -p 22,80,3000 -oA info_nmap 10.10.11.25 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -sCV -p 22,80,3000 -oA info_nmap 10.10.11.25" start="1733980753" startstr="Thu Dec 12 00:19:13 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="3" services="22,80,3000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.25" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1733980753" endtime="1733980844"><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="10.10.11.25" addrtype="ipv4"/>
+<hostnames>
+<hostname name="greenhorn.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="8.9p1 Ubuntu 3ubuntu0.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  256 57:d6:92:8a:72:44:84:17:29:eb:5c:c9:63:6a:fe:fd (ECDSA)&#xa;  256 40:ea:17:b1:b6:c5:3f:42:56:67:4a:3c:ee:75:23:2f (ED25519)"><table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOp+cK9ugCW282Gw6Rqe+Yz+5fOGcZzYi8cmlGmFdFAjI1347tnkKumDGK1qJnJ1hj68bmzOONz/x1CMeZjnKMw=</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">57d6928a7244841729eb5cc9636afefd</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIEZQbCc8u6r2CVboxEesTZTMmZnMuEidK9zNjkD2RGEv</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">40ea17b1b6c53f4256674a3cee75232f</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-title" output="Welcome to GreenHorn ! - GreenHorn&#xa;Requested resource was http://greenhorn.htb/?file=welcome-to-greenhorn"><elem key="title">Welcome to GreenHorn ! - GreenHorn</elem>
+<elem key="redirect_url">http://greenhorn.htb/?file=welcome-to-greenhorn</elem>
+</script><script id="http-generator" output="pluck 4.7.18"/><script id="http-robots.txt" output="2 disallowed entries &#xa;/data/ /docs/"/><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="http-cookie-flags" output="&#xa;  /: &#xa;    PHPSESSID: &#xa;      httponly flag not set"><table key="/">
+<table key="PHPSESSID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="3000"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ppp" servicefp="SF-Port3000-TCP:V=7.94SVN%I=7%D=12/12%Time=675A7257%P=x86_64-pc-linux-gnu%r(GenericLines,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(GetRequest,1530,&quot;HTTP/1\.0\x20200\x20OK\r\nCache-Control:\x20max-age=0,\x20private,\x20must-revalidate,\x20no-transform\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nSet-Cookie:\x20i_like_gitea=87c952300f9a58fa;\x20Path=/;\x20HttpOnly;\x20SameSite=Lax\r\nSet-Cookie:\x20_csrf=-pef7TPbAxfsigCUO-Wn2C7bL7g6MTczMzk4MDc2MTcyNTQ1MzM4OQ;\x20Path=/;\x20Max-Age=86400;\x20HttpOnly;\x20SameSite=Lax\r\nX-Frame-Options:\x20SAMEORIGIN\r\nDate:\x20Thu,\x2012\x20Dec\x202024\x2005:19:21\x20GMT\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en-US\&quot;\x20class=\&quot;theme-auto\&quot;&gt;\n&lt;head&gt;\n\t&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\n\t&lt;title&gt;GreenHorn&lt;/title&gt;\n\t&lt;link\x20rel=\&quot;manifest\&quot;\x20href=\&quot;data:application/json;base64,eyJuYW1lIjoiR3JlZW5Ib3JuIiwic2hvcnRfbmFtZSI6IkdyZWVuSG9ybiIsInN0YXJ0X3VybCI6Imh0dHA6Ly9ncmVlbmhvcm4uaHRiOjMwMDAvIiwiaWNvbnMiOlt7InNyYyI6Imh0dHA6Ly9ncmVlbmhvcm4uaHRiOjMwMDAvYXNzZXRzL2ltZy9sb2dvLnBuZyIsInR5cGUiOiJpbWFnZS9wbmciLCJzaXplcyI6IjUxMng1MTIifSx7InNyYyI6Imh0dHA6Ly9ncmVlbmhvcm4uaHRiOjMwMDAvYX&quot;)%r(Help,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(HTTPOptions,1B1,&quot;HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nAllow:\x20HEAD\r\nAllow:\x20HEAD\r\nAllow:\x20HEAD\r\nAllow:\x20GET\r\nCache-Control:\x20max-age=0,\x20private,\x20must-revalidate,\x20no-transform\r\nSet-Cookie:\x20i_like_gitea=7cb51c0101008c23;\x20Path=/;\x20HttpOnly;\x20SameSite=Lax\r\nSet-Cookie:\x20_csrf=wqniesl2lXQYUgxUgWxHrnOoraE6MTczMzk4MDc2Njk2Njg1NjI0NQ;\x20Path=/;\x20Max-Age=86400;\x20HttpOnly;\x20SameSite=Lax\r\nX-Frame-Options:\x20SAMEORIGIN\r\nDate:\x20Thu,\x2012\x20Dec\x202024\x2005:19:26\x20GMT\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RTSPRequest,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  GenericLines, Help, RTSPRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request&#xa;  GetRequest: &#xa;    HTTP/1.0 200 OK&#xa;    Cache-Control: max-age=0, private, must-revalidate, no-transform&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Set-Cookie: i_like_gitea=87c952300f9a58fa; Path=/; HttpOnly; SameSite=Lax&#xa;    Set-Cookie: _csrf=-pef7TPbAxfsigCUO-Wn2C7bL7g6MTczMzk4MDc2MTcyNTQ1MzM4OQ; Path=/; Max-Age=86400; HttpOnly; SameSite=Lax&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Date: Thu, 12 Dec 2024 05:19:21 GMT&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en-US&quot; class=&quot;theme-auto&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;title&gt;GreenHorn&lt;/title&gt;&#xa;    &lt;link rel=&quot;manifest&quot; href=&quot;data:application/json;base64,eyJuYW1lIjoiR3JlZW5Ib3JuIiwic2hvcnRfbmFtZSI6IkdyZWVuSG9ybiIsInN0YXJ0X3VybCI6Imh0dHA6Ly9ncmVlbmhvcm4uaHRiOjMwMDAvIiwiaWNvbnMiOlt7InNyYyI6Imh0dHA6Ly9ncmVlbmhvcm4uaHRiOjMwMDAvYXNzZXRzL2ltZy9sb2dvLnBuZyIsInR5cGUiOiJpbWFnZS9wbmciLCJzaXplcyI6IjUxMng1MTIifSx7InNyYyI6Imh0dHA6Ly9ncmVlbmhvcm4uaHRiOjMwMDAvYX&#xa;  HTTPOptions: &#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Allow: HEAD&#xa;    Allow: HEAD&#xa;    Allow: HEAD&#xa;    Allow: GET&#xa;    Cache-Control: max-age=0, private, must-revalidate, no-transform&#xa;    Set-Cookie: i_like_gitea=7cb51c0101008c23; Path=/; HttpOnly; SameSite=Lax&#xa;    Set-Cookie: _csrf=wqniesl2lXQYUgxUgWxHrnOoraE6MTczMzk4MDc2Njk2Njg1NjI0NQ; Path=/; Max-Age=86400; HttpOnly; SameSite=Lax&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Date: Thu, 12 Dec 2024 05:19:26 GMT&#xa;    Content-Length: 0"><elem key="GenericLines, Help, RTSPRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0 200 OK&#xa;    Cache-Control: max-age=0, private, must-revalidate, no-transform&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Set-Cookie: i_like_gitea=87c952300f9a58fa; Path=/; HttpOnly; SameSite=Lax&#xa;    Set-Cookie: _csrf=-pef7TPbAxfsigCUO-Wn2C7bL7g6MTczMzk4MDc2MTcyNTQ1MzM4OQ; Path=/; Max-Age=86400; HttpOnly; SameSite=Lax&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Date: Thu, 12 Dec 2024 05:19:21 GMT&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en-US&quot; class=&quot;theme-auto&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;title&gt;GreenHorn&lt;/title&gt;&#xa;    &lt;link rel=&quot;manifest&quot; href=&quot;data:application/json;base64,eyJuYW1lIjoiR3JlZW5Ib3JuIiwic2hvcnRfbmFtZSI6IkdyZWVuSG9ybiIsInN0YXJ0X3VybCI6Imh0dHA6Ly9ncmVlbmhvcm4uaHRiOjMwMDAvIiwiaWNvbnMiOlt7InNyYyI6Imh0dHA6Ly9ncmVlbmhvcm4uaHRiOjMwMDAvYXNzZXRzL2ltZy9sb2dvLnBuZyIsInR5cGUiOiJpbWFnZS9wbmciLCJzaXplcyI6IjUxMng1MTIifSx7InNyYyI6Imh0dHA6Ly9ncmVlbmhvcm4uaHRiOjMwMDAvYX</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Allow: HEAD&#xa;    Allow: HEAD&#xa;    Allow: HEAD&#xa;    Allow: GET&#xa;    Cache-Control: max-age=0, private, must-revalidate, no-transform&#xa;    Set-Cookie: i_like_gitea=7cb51c0101008c23; Path=/; HttpOnly; SameSite=Lax&#xa;    Set-Cookie: _csrf=wqniesl2lXQYUgxUgWxHrnOoraE6MTczMzk4MDc2Njk2Njg1NjI0NQ; Path=/; Max-Age=86400; HttpOnly; SameSite=Lax&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Date: Thu, 12 Dec 2024 05:19:26 GMT&#xa;    Content-Length: 0</elem>
+</script></port>
+</ports>
+<times srtt="43250" rttvar="23196" to="136034"/>
+</host>
+<runstats><finished time="1733980844" timestr="Thu Dec 12 00:20:44 2024" summary="Nmap done at Thu Dec 12 00:20:44 2024; 1 IP address (1 host up) scanned in 91.25 seconds" elapsed="91.25" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

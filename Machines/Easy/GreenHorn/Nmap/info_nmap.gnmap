@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Thu Dec 12 00:19:13 2024 as: /usr/lib/nmap/nmap --privileged -sCV -p 22,80,3000 -oA info_nmap 10.10.11.25
+Host: 10.10.11.25 (greenhorn.htb)	Status: Up
+Host: 10.10.11.25 (greenhorn.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/, 3000/open/tcp//ppp?///
+# Nmap done at Thu Dec 12 00:20:44 2024 -- 1 IP address (1 host up) scanned in 91.25 seconds
